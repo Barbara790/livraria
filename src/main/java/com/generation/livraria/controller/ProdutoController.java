@@ -24,7 +24,7 @@ import com.generation.livraria.repository.ProdutoRepository;
 public class ProdutoController {
 	
 	@Autowired
-	public ProdutoRepository repositorio;
+	private ProdutoRepository repositorio;
 	
 	@GetMapping
 	public ResponseEntity <List<Produto>> GetAll(){

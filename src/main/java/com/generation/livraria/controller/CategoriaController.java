@@ -26,7 +26,7 @@ import com.generation.livraria.repository.CategoriaRepository;
 public class CategoriaController {
 	
 	@Autowired
-	public CategoriaRepository repositorio;
+	private CategoriaRepository repositorio;
 	
 	@GetMapping
 	public ResponseEntity<List<Categoria>> GetAll(){
