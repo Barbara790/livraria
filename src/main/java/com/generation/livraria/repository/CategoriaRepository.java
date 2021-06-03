@@ -10,6 +10,6 @@ import com.generation.livraria.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 	
-	List<Categoria>findAllByGeneroContainingIgnoreCase(String genero);
+	 public List<Categoria>findAllByGeneroContainingIgnoreCase(String genero);
 
 }

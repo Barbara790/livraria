@@ -10,6 +10,6 @@ import com.generation.livraria.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	
-	List<Produto>findAllByNomeContainingIgnoreCase(String nome);
+	public List<Produto>findAllByNomeContainingIgnoreCase(String nome);
 
 }
